@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Екатерина Мохова](https://up.htmlacademy.ru/htmlcss/18/user/51070).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Петров](https://htmlacademy.ru/profile/fyvfyv).
 
 ---
 
