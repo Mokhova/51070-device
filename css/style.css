@@ -1,0 +1,33 @@
+body {
+  font-family:
+    "Open Sans",
+    -apple-system,
+    system-ui,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+}
+
+.page-title, .about-title, .contacts-title, .promo-slide-title {
+  font-family:
+    "Gilroy",
+    -apple-system,
+    system-ui,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 47px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: #000;
+}
