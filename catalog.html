@@ -5,10 +5,12 @@
   <title>HTML Academy: Каталог Девайс</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/fonts.css">
 </head>
 <body>
   <header class="main-header">
-    <a class="main-header-logo" href="index.html">Device</a>
+    <a class="main-header-logo logo" href="index.html">Device</a>
     <div class="assistive-navigation">
       <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
         <label for="site-search" class="visually-hidden">Поиск по сайту</label>
@@ -76,18 +78,16 @@
         <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
       <section class="filters">
-        <h2>Фильтры:</h2>
+        <h2>Фильтр:</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость</legend>
             <div class="filter-range">
               <div class="filter-range-bar"></div>
-              <div class="filter-range-control">
-                <span class="filter-range-label">от 0</span>
-              </div>
-              <div class="filter-range-control">
-                <span class="filter-range-label">до 5000</span>
-              </div>
+              <div class="filter-range-control"></div>
+              <span class="filter-range-label">от 0</span>
+              <div class="filter-range-control"></div>
+              <span class="filter-range-label">до 5000</span>
             </div>
           </fieldset>
           <fieldset>
@@ -134,11 +134,11 @@
       <section class="sorting">
         <h2>Сортировка:</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
-          <a class="sorting-option" href="#">По цене</a>
+          <a class="sorting-option sorting-option-current" href="#">По цене</a>
           <a class="sorting-option" href="#">По типу</a>
           <a class="sorting-option" href="#">По популярности</a>
           <a class="sorting-order sorting-order-ascending" href="#">По возрастанию</a>
-          <a class="sorting-order sorting-order-descending" href="#">По убыванию</a>
+          <a class="sorting-order sorting-order-current sorting-order-descending" href="#">По убыванию</a>
         </form>
       </section>
       <section class="product-catalog">
@@ -149,7 +149,7 @@
           <p class="product-card-price">500 руб.</p>
           <div class="product-card-actions">
             <a class="button" href="#">В корзину</a>
-            <a class="button" href="#">Добавить к сравнению</a>
+            <a class="product-card-link" href="#">Добавить к сравнению</a>
           </div>
         </article>
         <article class="product-card">
@@ -158,7 +158,7 @@
           <p class="product-card-price">1 500 руб.</p>
           <div class="product-card-actions">
             <a class="button" href="#">В корзину</a>
-            <a class="button" href="#">Добавить к сравнению</a>
+            <a class="product-card-link" href="#">Добавить к сравнению</a>
           </div>
         </article>
         <article class="product-card">
@@ -167,7 +167,7 @@
           <p class="product-card-price">2 500 руб.</p>
           <div class="product-card-actions">
             <a class="button" href="#">В корзину</a>
-            <a class="button" href="#">Добавить к сравнению</a>
+            <a class="product-card-link" href="#">Добавить к сравнению</a>
           </div>
         </article>
         <article class="product-card">
@@ -176,15 +176,15 @@
           <p class="product-card-price">4 900 руб.</p>
           <div class="product-card-actions">
             <a class="button" href="#">В корзину</a>
-            <a class="button" href="#">Добавить к сравнению</a>
+            <a class="product-card-link" href="#">Добавить к сравнению</a>
           </div>
         </article>
         <div class="pagination">
           <a class="pagination-button" href="#">Назад</a>
           <div class="pagination-numbers">
-            <a class="pagination-current" href="#">1</a>
-            <a href="catalog-2.html">2</a>
-            <a href="catalog-3.html">3</a>
+            <a class="pagination-number-current" href="#">1</a>
+            <a class="pagination-number" href="catalog-2.html">2</a>
+            <a class="pagination-number" href="catalog-3.html">3</a>
           </div>
           <a class="pagination-button" href="#">Вперед</a>
         </div>
@@ -192,7 +192,7 @@
   </main>
   <footer class="main-footer">
     <div class="footer-top">
-      <a class="main-footer-logo" href="index.html">Device</a>
+      <a class="main-footer-logo logo" href="index.html">Device</a>
       <ul class="footer-assistive-navigation-list">
         <li class="footer-assistive-navigation-item">
           <a class="footer-assistive-navigation-link login" href="#">Войти</a>
@@ -230,7 +230,7 @@
         <li class="social-button facebook">
           <a href="#">Фейсбук</a>
         </li>
-        <li class="social-button instagram">
+        <li class="social-button twitter">
           <a href="#">Инстаграм</a>
         </li>
       </ul>
