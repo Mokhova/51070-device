@@ -8,10 +8,10 @@
 </head>
 <body>
   <header class="main-header">
-    <a class="main-header-logo" href="index.html">Device</a>
+    <a class="main-header-logo logo" href="index.html">Device</a>
     <div class="assistive-navigation">
       <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
-        <label for="site-search" class="visually-hidden"></label>
+        <label for="site-search" class="visually-hidden">Поиск по сайту</label>
         <input class="search-input" type="search" name="site-search" id="site-search" placeholder="Поиск по сайту">
         <button class="search-button" type="submit">Найти</button>
       </form>
@@ -67,23 +67,25 @@
   <main class="container">
     <h1 class="page-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
-        <li><a href="main.html">Главная</a></li>
-        <li><a href="shop.html">Каталог товаров</a></li>
+        <li>
+          <a href="main.html">Главная</a>
+        </li>
+        <li>
+          <a href="shop.html">Каталог товаров</a>
+        </li>
         <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
       <section class="filters">
-        <h2>Фильтры:</h2>
+        <h2>Фильтр:</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость</legend>
             <div class="filter-range">
               <div class="filter-range-bar"></div>
-              <div class="filter-range-control">
-                <span class="filter-range-label">от 0</span>
-              </div>
-              <div class="filter-range-control">
-                <span class="filter-range-label">до 5000</span>
-              </div>
+              <div class="filter-range-control"></div>
+              <span class="filter-range-label">от 0</span>
+              <div class="filter-range-control"></div>
+              <span class="filter-range-label">до 5000</span>
             </div>
           </fieldset>
           <fieldset>
@@ -130,17 +132,11 @@
       <section class="sorting">
         <h2>Сортировка:</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
-          <input class="visually-hidden" type="radio" name="sorting" value="price" id="sorting-price">
-          <label class="sorting-label" for="sorting-price">По цене</label>
-
-          <input class="visually-hidden" type="radio" name="sorting" value="type" id="sorting-type">
-          <label class="sorting-label" for="sorting-type">По типу</label>
-
-          <input class="visually-hidden" type="radio" name="sorting" value="popularity" id="sorting-popularity">
-          <label class="sorting-label" for="sorting-popularity">По популярности</label>
-
-          <input class="sorting-button-ascending" type="button" value="ascending" name="ascending">
-          <input class="sorting-button-descending" type="button" value="descending" name="descending">
+          <a class="sorting-option sorting-option-current" href="#">По цене</a>
+          <a class="sorting-option" href="#">По типу</a>
+          <a class="sorting-option" href="#">По популярности</a>
+          <a class="sorting-order sorting-order-ascending" href="#">По возрастанию</a>
+          <a class="sorting-order sorting-order-current sorting-order-descending" href="#">По убыванию</a>
         </form>
       </section>
       <section class="product-catalog">
@@ -151,7 +147,7 @@
           <p class="product-card-price">500 руб.</p>
           <div class="product-card-actions">
             <a class="button" href="#">В корзину</a>
-            <a class="button" href="#">Добавить к сравнению</a>
+            <a class="product-card-link" href="#">Добавить к сравнению</a>
           </div>
         </article>
         <article class="product-card">
@@ -160,7 +156,7 @@
           <p class="product-card-price">1 500 руб.</p>
           <div class="product-card-actions">
             <a class="button" href="#">В корзину</a>
-            <a class="button" href="#">Добавить к сравнению</a>
+            <a class="product-card-link" href="#">Добавить к сравнению</a>
           </div>
         </article>
         <article class="product-card">
@@ -169,7 +165,7 @@
           <p class="product-card-price">2 500 руб.</p>
           <div class="product-card-actions">
             <a class="button" href="#">В корзину</a>
-            <a class="button" href="#">Добавить к сравнению</a>
+            <a class="product-card-link" href="#">Добавить к сравнению</a>
           </div>
         </article>
         <article class="product-card">
@@ -178,15 +174,15 @@
           <p class="product-card-price">4 900 руб.</p>
           <div class="product-card-actions">
             <a class="button" href="#">В корзину</a>
-            <a class="button" href="#">Добавить к сравнению</a>
+            <a class="product-card-link" href="#">Добавить к сравнению</a>
           </div>
         </article>
         <div class="pagination">
           <a class="pagination-button" href="#">Назад</a>
           <div class="pagination-numbers">
-            <a class="pagination-current" href="#">1</a>
-            <a href="catalog-2.html">2</a>
-            <a href="catalog-3.html">3</a>
+            <a class="pagination-number-current" href="#">1</a>
+            <a class="pagination-number" href="catalog-2.html">2</a>
+            <a class="pagination-number" href="catalog-3.html">3</a>
           </div>
           <a class="pagination-button" href="#">Вперед</a>
         </div>
@@ -194,9 +190,7 @@
   </main>
   <footer class="main-footer">
     <div class="footer-top">
-      <a class="main-footer-logo">
-        <img src="img/footer-logo.png" width="163" height="36" alt="Логотип интернет-магазина Device">
-      </a>
+      <a class="main-footer-logo logo" href="index.html">Device</a>
       <ul class="footer-assistive-navigation-list">
         <li class="footer-assistive-navigation-item">
           <a class="footer-assistive-navigation-link login" href="#">Войти</a>
@@ -223,14 +217,20 @@
         </li>
       </ul>
       <div>
-        <a href="tel:+79385122332">Тел.: +7(495)495-95-95</a>
+        <a class="phone-link" href="tel:+74954959595">Тел.: +7(495) 495-95-95</a>
       </div>
     </div>
     <div class="footer-bottom">
       <ul class="footer-social">
-        <li class="social-button vkontakte"><a href="#">Вконтакте</a></li>
-        <li class="social-button facebook"><a href="#">Фейсбук</a></li>
-        <li class="social-button instagram"><a href="#">Инстаграм</a></li>
+        <li class="social-button vkontakte">
+          <a href="#">Вконтакте</a>
+        </li>
+        <li class="social-button facebook">
+          <a href="#">Фейсбук</a>
+        </li>
+        <li class="social-button twitter">
+          <a href="#">Инстаграм</a>
+        </li>
       </ul>
       <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/logo-html.svg" width="27" height="35" alt="Сайт HTML Academy">

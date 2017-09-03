@@ -9,10 +9,10 @@
   <body>
     <header class="main-header">
       <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
-      <a class="main-header-logo">Device</a>
+      <a class="main-header-logo logo">Device</a>
       <div class="assistive-navigation">
         <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
-          <label for="site-search" class="visually-hidden"></label>
+          <label for="site-search" class="visually-hidden">Поиск по сайту</label>
           <input class="search-input" type="search" name="site-search" id="site-search" placeholder="Поиск по сайту">
           <button class="search-button" type="submit">Найти</button>
         </form>
@@ -81,7 +81,7 @@
             </p>
             <a class="button" href="fitness-band-item.html">Подробнее</a>
             <table class="promo-slide-specs">
-              <tr>
+              <tr class="promo-slide-factiod">
                 <td>8,5м</td>
                 <td>5 кг</td>
                 <td>Карбон</td>
@@ -107,7 +107,7 @@
             </p>
             <a class="button" href="fitness-band-item.html">Подробнее</a>
             <table class="promo-slide-specs">
-              <tr>
+              <tr class="promo-slide-specs-factiod">
                 <td>48 часов</td>
               </tr>
               <tr>
@@ -129,7 +129,7 @@
             </p>
             <a class="button" href="fitness-band-item.html">Подробнее</a>
             <table class="promo-slide-specs">
-              <tr>
+              <tr class="promo-slide-specs-factiod">
                 <td>800 м</td>
                 <td>50 м</td>
               </tr>
@@ -141,14 +141,14 @@
           </div>
         </div>
         <div class="promo-slider-controls">
-          <button class="slider-button slider-button-current">Первый слайд</button>
-          <button class="slider-button">Второй слайд</button>
-          <button class="slider-button">Третий слайд</button>
+          <button class="slider-button slider-button-current" type="button">Первый слайд</button>
+          <button class="slider-button" type="button">Второй слайд</button>
+          <button class="slider-button" type="button">Третий слайд</button>
         </div>
       </section>
       <section class="categories">
         <h2 class="visually-hidden">Категории товаров</h2>
-        <ul class="category-item">
+        <ul class="category-list">
           <li class="category-item">
             <a class="category-link" href="virtual-reality.html">
               <figure>
@@ -202,14 +202,9 @@
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <div class="services-tabs">
-          <input class="visually-hidden" type="radio" name="service-tab" id="delivery" checked>
-          <label class="service-tab current" for="delivery"></label>
-
-          <input class="visually-hidden" type="radio" name="service-tab" id="warranty">
-          <label class="service-tab button" for="warranty"></label>
-
-          <input class="visually-hidden" type="radio" name="service-tab" id="credit">
-          <label class="service-tab button" for="credit"></label>
+          <button class="service-tab service-tab-current" type="button">Доставка</button>
+          <button class="service-tab button" type="button">Гарантия</button>
+          <button class="service-tab button" type="button">Кредит</button>
         </div>
         <!-- 1 вкладка -->
         <div class="service-content service-delivery">
@@ -293,7 +288,7 @@
     </main>
     <footer class="main-footer">
       <div class="footer-top">
-        <a class="main-footer-logo">Device</a>
+        <a class="main-footer-logo logo">Device</a>
         <ul class="footer-assistive-navigation-list">
           <li class="footer-assistive-navigation-item">
             <a class="footer-assistive-navigation-link login" href="#">Войти</a>
@@ -320,14 +315,20 @@
           </li>
         </ul>
         <div>
-          <a href="tel:+79385122332">Тел.: +7(495)495-95-95</a>
+          <a class="phone-link" href="tel:+74954959595">Тел.: +7(495) 495-95-95</a>
         </div>
       </div>
       <div class="footer-bottom">
         <ul class="footer-social">
-          <li class="social-button vkontakte"><a href="#">Вконтакте</a></li>
-          <li class="social-button facebook"><a href="#">Фейсбук</a></li>
-          <li class="social-button instagram"><a href="#">Инстаграм</a></li>
+          <li class="social-button social-button-vkontakte">
+            <a href="#">Вконтакте</a>
+          </li>
+          <li class="social-button social-button-facebook">
+            <a href="#">Фейсбук</a>
+          </li>
+          <li class="social-button social-button-twitter">
+            <a href="#">Инстаграм</a>
+          </li>
         </ul>
         <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-html.svg" width="27" height="35" alt="Сайт HTML Academy">
@@ -350,13 +351,13 @@
           <textarea name="text" placeholder="В свободной форме"></textarea>
         </label>
         <button class="button" type="submit">Отправить</button>
-        <button class="modal-close" type="button">Отправить</button>
+        <button class="modal-close" type="button">Закрыть форму</button>
       </form>
     </section>
     <section class="modal modal-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <img src="img/map.jpg" width="960" height="559" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
-      <button class="modal-close" type="button">Закрыть</button>
+      <h2 class="visually-hidden">Карта: как до нас добраться</h2>
+      <img src="img/modal-map.jpg" width="960" height="559" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
+      <button class="modal-close" type="button">Закрыть карту</button>
     </section>
   </body>
 </html>

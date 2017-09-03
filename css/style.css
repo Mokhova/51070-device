@@ -1,3 +1,43 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Light'),
+         local('Gilroy-Light'),
+         url('../fonts/gilroylight.woff2') format('woff2'),
+         url('../fonts/gilroylight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Extrabold'),
+         local('Gilroy-Extrabold'),
+         url('../fonts/gilroyextrabold.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light'),
+         local('OpenSans-Light'),
+         url('../fonts/opensanslight.woff2') format('woff2'),
+         url('../fonts/opensanslight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Regular'),
+         local('OpenSans-Regular'),
+         url('../fonts/opensans.woff2') format('woff2'),
+         url('../fonts/opensans.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
   font-family:
     "Open Sans",
@@ -10,12 +50,16 @@ body {
     Arial,
     sans-serif;
   font-size: 15px;
-  line-height: 30px;
   font-weight: 300;
-  color: #464646;
+  line-height: 30px;
+  color: #000;
 }
 
-.page-title, .about-title, .contacts-title, .promo-slide-title {
+.page-title,
+.promo-slide-title,
+.service-title,
+.contacts-title,
+.about-title {
   font-family:
     "Gilroy",
     -apple-system,
@@ -27,7 +71,680 @@ body {
     Arial,
     sans-serif;
   font-size: 47px;
+  font-weight: 800;
   letter-spacing: 1px;
+  color: #000;
+}
+
+.main-header {
+  background-color: #F7E296;
+}
+
+.main-header a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main-header a:hover,
+.main-header a:focus {
+  color: #000;
+  opacity: .6;
+}
+
+.main-header a:active {
+  color: #000;
+  opacity: .3;
+}
+
+.main-header ul {
+  list-style-type: none;
+}
+
+.logo {
+  font-family:
+    "Gilroy",
+    -apple-system,
+    system-ui,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.main-header-logo {
+  color: #000;
+}
+
+.search-input::placeholder {
+  font-weight: 300;
+  color: #000;
+  opacity: .3;
+}
+
+.main-navigation-link,
+.footer-navigation-link {
+  font-family:
+    "Gilroy",
+    -apple-system,
+    system-ui,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.search-input:hover::placeholder,
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: #000;
+  opacity: .6;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+}
+
+.search-input:focus {
+  border-bottom: 2px solid #000;
+  outline: none;
+}
+
+.search-button {
+  font-weight: 300;
+
+  background: transparent;
+  border: 2px solid #000;
+
+  opacity: 0;
+}
+
+.search-input:focus + .search-button {
+  opacity: 1;
+}
+
+.search-input:focus + .search-button:hover,
+.search-button:focus {
+  color: #fff;
+  background: #000;
+  opacity: 1;
+}
+
+.search-button:active {
+  color: rgba(255, 255, 255, .3);
+  background: #000;
+  opacity: 1;
+}
+
+.breadcrumbs,
+.breadcrumbs a {
+  font-size: 14px;
+  color: #000;
+  opacity: .3;
+}
+
+.breadcrumbs {
+  list-style-type: none;
+}
+
+.button {
+  font-family:
+    "Gilroy",
+    -apple-system,
+    system-ui,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 18px;
   font-weight: 800;
   color: #000;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: transparent;
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255,255,255,0) 34%,
+    #f0c52e 34%,
+    #f0c52e 66%,
+    rgba(255,255,255,0) 66%);
+
+  background: -moz-linear-gradient(
+    top,
+    rgba(255,255,255,0) 34%,
+    #f0c52e 34%,
+    #f0c52e 66%,
+    rgba(255,255,255,0) 66%);
+
+  background: linear-gradient(
+    top,
+    rgba(255,255,255,0) 34%,
+    #f0c52e 34%,
+    #f0c52e 66%,
+    rgba(255,255,255,0) 66%);
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background: #f0c52e;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, .3);
+  background: #f0c52e;
+}
+
+.promo-slide-description,
+.service-content p,
+.info-container p,
+.contacts p {
+  font-weight: 300;
+  color: #464646;
+}
+
+.promo-slide-specs {
+  font-size: 13px;
+  color: #464646;
+}
+
+.promo-slide-factiod {
+  font-family:
+    "Gilroy",
+    -apple-system,
+    system-ui,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 36px;
+}
+
+.slider-button {
+  width: 12px;
+  height: 12px;
+  font-size: 0;
+  line-height: 0;
+
+  background-color: transparent;
+  background-image: url("../img/slider-button-empty.svg");
+  background-repeat: no-repeat;
+  background-size: 12px;
+  border: none;
+
+  cursor: pointer;
+}
+
+.slider-button-current {
+  background-image: url("../img/slider-button.svg");
+  background-repeat: no-repeat;
+}
+
+.category-list {
+  list-style-type: none;
+}
+
+.category-item {
+  background-color: #f8e296;
+}
+
+.category-item:hover,
+.category-item:focus {
+  background-color: #f0c52e;
+}
+
+.category-item:active figure {
+  opacity: .3;
+}
+
+.category-link,
+.filters legend,
+.write-us-form label,
+.product-card-title {
+  font-family:
+    "Gilroy",
+    -apple-system,
+    system-ui,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #000;
+  text-decoration: none;
+}
+
+.service-tab-current {
+  font-family:
+    "Gilroy",
+    -apple-system,
+    system-ui,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #f7e184;
+
+  background-color: #000;
+  border: none;
+}
+
+.brands-list {
+  list-style-type: none;
+}
+
+.brands-link img {
+  filter: grayscale(100%);
+  opacity: .2;
+}
+
+.brands-link:hover img,
+.brands-link:focus img {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.about-delivery-item {
+  font-family:
+    "Gilroy",
+    -apple-system,
+    system-ui,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+.filters {
+  background-color: #efefef;
+}
+
+.filters ul {
+  list-style-type: none;
+}
+
+.filters h2, .sorting h2 {
+  font-family:
+    "Gilroy",
+    -apple-system,
+    system-ui,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.filters h2 {
+  background-color: #d9d9d9;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filter-range-bar {
+  width: 196px;
+  height: 2px;
+  background-color: #dbdbdb;
+}
+
+.filter-range-control {
+  width: 20px;
+  height: 22px;
+
+  background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-range-label {
+  font-family:
+    "Gilroy",
+    -apple-system,
+    system-ui,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ccc;
+}
+
+.filter-color-option-label,
+.filter-bluetooth-option-label {
+  font-size: 14px;
+}
+
+.sorting h2 {
+  background-color: #efefef;
+}
+
+.sorting a {
+  text-decoration: none;
+}
+
+.sorting-option {
+  font-size: 14px;
+  color: #000;
+  opacity: .3;
+}
+
+.sorting-option:hover,
+.sorting-option:focus {
+  color: #000;
+  opacity: .6;
+}
+
+.sorting-option:active,
+.sorting-option-current {
+  color: #000;
+}
+
+.sorting-order {
+  display: inline-block;
+  width: 11px;
+  height: 10px;
+  font-size: 0;
+  line-height: 0;
+
+  opacity: .2;
+}
+
+.sorting-order:hover,
+.sorting-order:focus {
+  opacity: .4;
+}
+
+.sorting-order:active {
+  opacity: 1;
+}
+
+.sorting-order-current {
+  opacity: 1;
+}
+
+.sorting-order-ascending {
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+}
+
+.sorting-order-descending {
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+}
+
+.product-card-link {
+  font-size: 13px;
+  color: #000;
+  text-decoration: none;
+
+  opacity: .5;
+}
+
+.product-card-link:hover,
+.product-card-link:focus {
+  color: #000;
+  opacity: 1;
+}
+
+.product-card-link:active {
+  color: #000;
+  opacity: .2;
+}
+
+.pagination {
+  background-color: #efefef;
+}
+
+.pagination a {
+  text-decoration: none;
+}
+
+.pagination-button, .pagination-number-current, .pagination-number{
+  font-family:
+    "Gilroy",
+    -apple-system,
+    system-ui,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.pagination-number {
+  color: #000;
+  opacity: .3;
+}
+
+.pagination-number:hover,
+.pagination-number:focus {
+  color: #000;
+  opacity: .6;
+}
+
+.pagination-number:active {
+  color: #000;
+  opacity: 1;
+}
+
+.pagination-button:hover,
+.pagination-button:focus {
+  background-color: #d9d9d9;
+}
+
+.pagination-button:active {
+  color: rgba(0, 0, 0, .3);
+  background-color: #d9d9d9;
+}
+
+.main-footer {
+  background-color: #464646;
+}
+
+.main-footer ul {
+  list-style-type: none;
+}
+
+.main-footer-logo.logo {
+  color: #ffc600;
+}
+
+.main-footer-logo:hover,
+.main-footer-logo:focus {
+  color: #ffc600;
+  opacity: .6;
+}
+
+.main-footer-logo:active {
+  color: #ffc600;
+  opacity: .3;
+}
+
+.main-footer, .main-footer a {
+  color: #fff;
+}
+
+.main-footer a{
+  text-decoration: none;
+}
+
+.main-footer .phone-link:hover,
+.main-footer .phone-link:focus {
+  color: #fff;
+  opacity: .7;
+}
+
+.footer-assistive-navigation-link {
+  font-weight: 300;
+  color: #fff;
+}
+
+.footer-navigation-link:hover,
+.footer-navigation-link:focus {
+  color: #fff;
+  opacity: .6;
+}
+
+.footer-assistive-navigation-link:hover,
+.footer-assistive-navigation-link:focus {
+  color: #fff;
+  opacity: .7;
+}
+
+.footer-navigation-link:active,
+.footer-assistive-navigation-link:active {
+  color: #fff;
+  opacity: .3;
+}
+
+.social-button {
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  line-height: 0;
+
+  border-radius: 50%;
+
+  opacity: .3;
+}
+
+.social-button:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.social-button:focus {
+  opacity: .6;
+}
+
+.social-button:active {
+  opacity: .1;
+}
+
+.social-button-vkontakte {
+  background-image: url("../img/vk.svg");
+  background-repeat: no-repeat;
+}
+
+.social-button-facebook {
+  background-image: url("../img/fb.svg");
+  background-repeat: no-repeat;
+}
+
+.social-button-twitter {
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+}
+
+.write-us-form input[type="text"],
+.write-us-form textarea {
+  font-size: 14px;
+  font-weight: 400;
+  color: #464646;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.write-us-form input[type="text"]::placeholder,
+.write-us-form textarea::placeholder {
+  color: #b5b5b5;
+}
+
+.write-us-form input[type="text"]:hover,
+.write-us-form textarea:hover {
+  background-color: #eaeaea;
+}
+
+.write-us-form input[type="text"]:focus,
+.write-us-form textarea:focus {
+  background-color: #fff;
+  border: 2px solid #f0c52e;
+}
+
+.modal-close {
+  width: 55px;
+  height: 55px;
+  font-size: 0;
+  line-height: 0;
+
+  background-color: transparent;
+  background-image: url("../img/modal-close.svg");
+  background-repeat: no-repeat;
+  border: none;
+
+  opacity: .5;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: .3;
+}
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
 }
